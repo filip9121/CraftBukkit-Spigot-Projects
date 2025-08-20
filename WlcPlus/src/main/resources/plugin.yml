@@ -1,0 +1,26 @@
+name: WelcomePlus
+version: '1.0'
+main: me.wlc.wlcPlus.WlcPlus
+api-version: '1.20'
+author: YourName
+
+commands:
+  kit:
+    description: Claim your starter kit!
+    usage: /<command>
+  playtime:
+    description: Check your current playtime.
+    usage: /<command>
+
+# This gives players permission to use the basic commands by default.
+# Admins will use 'welcomeplus.admin' for reloading.
+permissions:
+  WlcPlus.kit:
+    description: Allows use of /kit
+    default: true
+  WlcPlus.playtime:
+    description: Allows use of /playtime
+    default: true
+  WlcPlus.admin:
+    description: Allows admin commands like /wpreload
+    default: op
